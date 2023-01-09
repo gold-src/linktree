@@ -1,0 +1,256 @@
+body {
+  font-family: 'Montserrat', 'Roboto', sans-serif;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+  width: 100%;
+}
+
+.tree-background {
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  background-image: url("src/background.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.window-share {
+  z-index: 200;
+  position: fixed;
+  background-color: rgba(0,0,0,.5);
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+.window-share-bloc {
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  width: 300px;
+  background-color: #FFF;
+  margin: auto;
+  border-radius: 10px;
+  position: relative;
+}
+
+.window-share-close {
+  display: flex;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  cursor: pointer;
+}
+
+.window-share-close-page {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+}
+
+.window-share-title {
+  display: flex;
+  margin: 30px auto;
+}
+
+.window-share-url {
+  display: flex;
+  cursor: pointer;
+  color: black;
+  margin: auto;
+  background-color: rgba(0,0,0,.1);
+  padding: 20px 10px;
+  border-radius: 10px;
+  width: 80%;
+  border: solid 1px #000;
+}
+
+.fa-margin {
+  margin-left: auto;
+}
+
+.tree-body {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 26%;
+  position: relative;
+  scroll-behavior: smooth;
+  overflow: auto;
+}
+
+.tree-head {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  margin-top: 90px;
+}
+
+.tree-share-bar {
+  display: flex;
+  flex-direction: row;
+  border: solid 1px transparent;
+  height: 60px;
+  position: fixed;
+  width: 50%;
+  left: 25%;
+}
+
+.tree-share-bar-full {
+  display: flex;
+  flex-direction: row;
+  border: solid 1px #FFF;
+  background-color: #FFF;
+  border-radius: 100px;
+  height: 60px;
+  position: fixed;
+  width: 50%;
+  left: 25%;
+  z-index: 100;
+  -webkit-box-shadow: 0px 5px 15px 5px rgba(0,0,0,0.14); 
+  box-shadow: 0px 5px 15px 5px rgba(0,0,0,0.14);
+}
+
+.tree-share-logo {
+  display: flex;
+  height: 30px;
+  width: 30px;
+  border-radius: 100px;
+  margin: auto 0 auto 20px;
+}
+
+.tree-share-title {
+  display: flex;
+  margin: auto;
+}
+
+.tree-share-button {
+  display: flex;
+  background-color: #FFF;
+  border: solid 1px #000;
+  border-radius: 100px;
+  height: 40px;
+  width: 40px;
+  place-items: center;
+  cursor: pointer;
+  margin: auto 20px auto auto;
+  justify-content: center;
+}
+
+.tree-share-button-full {
+  display: flex;
+  background-color: #FFF;
+  border: solid 1px #000;
+  border-radius: 100px;
+  height: 40px;
+  width: 40px;
+  place-items: center;
+  cursor: pointer;
+  margin: auto 20px auto 0;
+  justify-content: center;
+}
+
+.tree-share-button:hover, .tree-share-button-full:hover {
+  transition: 0.3s;
+  background: rgb(231, 231, 231);
+  -webkit-box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.4); 
+  box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.4);
+}
+
+.tree-logo {
+  display: flex;
+  height: 100px;
+  margin: 10px auto;
+}
+
+.tree-title {
+  display: flex;
+  color: #FFF;
+  justify-content: center;
+  margin: 10px auto;
+}
+
+.logo-certificate {
+  display: flex;
+  font-size: 20px;
+  justify-content: center;
+  align-self: center;
+}
+
+.social-bar {
+  display: flex;
+  flex-direction: row;
+  margin: 10px auto;
+}
+
+.social-button {
+  display: flex;
+  color: #FFF;
+  font-size: 30px;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.social-button:hover {
+  transition: 0.3s;
+  color: rgb(231, 231, 231);
+}
+
+.tree-mini-logo {
+  display: flex;
+  height: 20px;
+      position: absolute;
+  top: calc(50% - 10px);
+  left: 20px;
+}
+
+.tree-button {
+  display: flex;
+  flex-direction: row;
+  background-color: #FFF;
+  padding: 5px 0;
+  width: 100%;
+  margin: 10px auto;
+  border-radius: 10px;
+  text-decoration: none;
+  border: 1px solid #FFF;
+  transition: 0.3s;
+  position: relative;
+}
+
+.tree-button:hover {
+  transition: 0.3s;
+  background: rgb(231, 231, 231);
+  -webkit-box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.4); 
+  box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.4);
+}
+
+.tree-button-text {
+  display: flex;
+  color: #000;
+  margin: 10px auto;
+  font-family: 'Roboto';
+  font-size: larger;
+}
+
+@media (max-width: 980px) {
+  .tree-body {
+    margin: 20px 10%;
+  }
+
+  .tree-share-bar {
+    width: 90%;
+    left: 5%;
+  }
+
+  .tree-share-bar-full {
+    width: 90%;
+    left: 5%;
+  }
+}
