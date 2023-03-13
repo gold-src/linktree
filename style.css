@@ -12,8 +12,9 @@ body {
   height: 100%;
   width: 100%;
   position: fixed;
-  background-image: url("src/background.jpg");
+  background-image: url("src/background.png");
   background-attachment: fixed;
+  background-position: center;
   background-size: cover;
 }
 
@@ -222,6 +223,10 @@ body {
   border: 1px solid #FFF;
   transition: 0.3s;
   position: relative;
+}
+
+.tree-button:last-of-type {
+  margin-bottom: 200px
 }
 
 .tree-button:hover {
